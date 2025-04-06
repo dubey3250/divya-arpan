@@ -1,0 +1,1 @@
+This web application is designed to provide a platform where users can book various types of Aarti services, such as Ganga Aarti, Wedding Aarti, and Professional Aarti. The app also includes a slider showcasing images related to Aarti services, and a WhatsApp number integration for direct bookings and inquiries.
