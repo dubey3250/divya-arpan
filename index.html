@@ -356,9 +356,7 @@
             left: 0;
         }
         
-        /*style for our devotees*/
-        /* Section wrapper spacing */
-/* Section wrapper */
+/*style for our devotees*/
 .stats-section {
   padding: 4rem 1rem;
   background: #fff9f0;
@@ -378,7 +376,7 @@
 }
 
 /* Title */
-.stats-title {
+.stats-card h2 {
   font-size: 2rem;
   font-weight: 600;
   color: #92400e;
@@ -386,14 +384,14 @@
 }
 
 /* Grid */
-.stats-grid {
+.stats-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
-/* Individual stat card */
-.stat-item {
+/* Individual stat box */
+.stat-box {
   background: #ffffff;
   border-radius: 18px;
   padding: 2.2rem 1.5rem;
@@ -403,7 +401,7 @@
   overflow: hidden;
 }
 
-.stat-item::before {
+.stat-box::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -417,17 +415,17 @@
   transition: opacity 0.35s ease;
 }
 
-.stat-item:hover::before {
+.stat-box:hover::before {
   opacity: 1;
 }
 
-.stat-item:hover {
+.stat-box:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
 }
 
 /* Number box */
-.stat-value {
+.stat-number {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -443,20 +441,13 @@
 }
 
 /* Label text */
-.stat-label {
+.stat-box p {
   margin-top: 1.1rem;
   font-size: 1.05rem;
   font-weight: 500;
   color: #374151;
   line-height: 1.4;
 }
-
-/* Subtle emphasis on important words */
-.stat-label strong {
-  color: #92400e;
-  font-weight: 600;
-}
-
 
     </style>
 </head>
@@ -710,4 +701,5 @@
 
 </body>
 </html>
+
 
