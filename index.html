@@ -65,10 +65,14 @@
   }
 }
 
+/* Import a stylish font for logo */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
 /* Logo */
 .logo {
   display: flex;
-  align-items: center;
+  flex-direction: column; /* ✅ stack children vertically */
+  align-items: left;    /* center horizontally */
 }
 
 .logo img {
@@ -76,15 +80,14 @@
   width: auto;
 }
 
-/* Import a stylish font for logo */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
-
 .logo-text {
   font-size: 2.5rem;
   color: white;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  display: block;  /* ✅ ensures it pushes the <p> below */
+  margin-bottom: 0.25rem; /* optional spacing */
 }
 
 
@@ -550,30 +553,26 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="header-top">
-    <div class="logo">
-      <span class="logo-text">
-      Divyarpan.in
-      </span>
-    </div>
-
-    <!-- Desktop + mobile nav -->
-    <nav class="nav-menu">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#booking">Book Now</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- Mobile menu button -->
-    <button class="menu-toggle" aria-label="Toggle menu">
-      ☰
-    </button>
-  </div>
+	  <div class="header-top">
+	    <div class="logo">
+	     <span class="logo-text">Divyarpan.in</span>
+    <p class="logo-tagline">Bringing Sacred Ceremonies to Your Special Moments</p>
+	    </div>
+	
+	    <!-- Desktop + mobile nav -->
+	    <nav class="nav-menu">
+	      <a href="#home">Home</a>
+	      <a href="#services">Services</a>
+	      <a href="#booking">Book Now</a>
+	      <a href="#contact">Contact</a>
+	    </nav>
+	
+	    <!-- Mobile menu button -->
+	    <button class="menu-toggle" aria-label="Toggle menu">
+	      ☰
+	    </button>
+	  </div>
 </header>
-
-
-
     <section id="home" class="hero">
         <div class="slider">
             <div class="slide slide-1">
@@ -840,6 +839,7 @@
 
 </body>
 </html>
+
 
 
 
